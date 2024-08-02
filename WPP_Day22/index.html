@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Dropdown-list{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <button id="Dropdown-button">Show Dropdown</button>
+        <ul id="Dropdown-list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    const drop_btn = document.getElementById('Dropdown-button');
+    const drop_list = document.getElementById('Dropdown-list');
+    drop_btn.addEventListener('click',()=>{
+        drop_list.style.display = drop_list.style.display === 'none' ? 'block' : 'none';
+    })
+</script>
+
+</html>
